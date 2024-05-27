@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        input[type="text"],
+        input[type="url"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .question label {
+            font-weight: normal;
+        }
+        input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Information</h1>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="enrollment">Enrollment No:</label>
+            <input type="text" id="enrollment" name="enrollment">
+
+            <label for="batch">Batch No:</label>
+            <input type="text" id="batch" name="batch">
+
+            <h2>Quiz</h2>
+
+            <div class="question">
+                <label>1. Which one of the following river flows between Vindhyan and Satpura ranges?</label><br>
+                <input type="checkbox" name="question1" value="1"> Narmada<br>
+                <input type="checkbox" name="question1" value="2"> Mahanadi<br>
+                <input type="checkbox" name="question1" value="3"> Son<br>
+                <input type="checkbox" name="question1" value="4"> Netravati<br>
+                <input type="checkbox" name="question1" value="5"> Daughter<br>
+            </div>
+
+            <div class="question">
+                <label>2. The Central Rice Research Station is situated in?</label><br>
+                <input type="checkbox" name="question2" value="1"> Chennai<br>
+                <input type="checkbox" name="question2" value="2"> Cuttack<br>
+                <input type="checkbox" name="question2" value="3"> Bangalore<br>
+                <input type="checkbox" name="question2" value="4"> Quilon<br>
+                <input type="checkbox" name="question2" value="5"> Kolkata<br>
+            </div>
+
+            <div class="question">
+                <label>3. Who among the following wrote Sanskrit grammar?</label><br>
+                <input type="checkbox" name="question3" value="1"> Kalidasa<br>
+                <input type="checkbox" name="question3" value="2"> Charak<br>
+                <input type="checkbox" name="question3" value="3"> Panini<br>
+                <input type="checkbox" name="question3" value="4"> Aryabhatta<br>
+                <input type="checkbox" name="question3" value="5"> Shankar<br>
+            </div>
+
+            <div class="question">
+                <label>4. Which among the following headstreams meets the Ganges in last?</label><br>
+                <input type="checkbox" name="question4" value="1"> Alaknanda<br>
+                <input type="checkbox" name="question4" value="2"> Pindar<br>
+                <input type="checkbox" name="question4" value="3"> Mandakini<br>
+                <input type="checkbox" name="question4" value="4"> Bhagirathi<br>
+                <input type="checkbox" name="question4" value="5"> Panindar<br>
+            </div>
+
+            <div class="question">
+                <label>5. The metal whose salts are sensitive to light is?</label><br>
+                <input type="checkbox" name="question5" value="1"> Zinc<br>
+                <input type="checkbox" name="question5" value="2"> Silver<br>
+                <input type="checkbox" name="question5" value="3"> Copper<br>
+                <input type="checkbox" name="question5" value="4"> Aluminum<br>
+                <input type="checkbox" name="question5" value="5"> Gold<br>
+            </div>
+
+            <div class="question">
+                <label>6. Patanjali is well known for the compilation of?</label><br>
+                <input type="checkbox" name="question6" value="1"> Yoga Sutra<br>
+                <input type="checkbox" name="question6" value="2"> Panchatantra<br>
+                <input type="checkbox" name="question6" value="3"> Brahma Sutra<br>
+                <input type="checkbox" name="question6" value="4"> Ayurveda<br>
+                <input type="checkbox" name="question6" value="5"> Ramdev Baba<br>
+            </div>
+
+            <div class="question">
+                <label>7. River Luni originates near Pushkar and drains into which one of the following?</label><br>
+                <input type="checkbox" name="question7" value="1"> Rann of Kachchh<br>
+                <input type="checkbox" name="question7" value="2"> Arabian Sea<br>
+                <input type="checkbox" name="question7" value="3"> Gulf of Cambay<br>
+                <input type="checkbox" name="question7" value="4"> Lake Sambhar<br>
+                <input type="checkbox" name="question7" value="5"> Ganga<br>
+            </div>
+
+            <div class="question">
+                <label>8. Which one of the following rivers originates in Brahmagiri range of Western Ghats?</label><br>
+                <input type="checkbox" name="question8" value="1"> Pennar<br>
+                <input type="checkbox" name="question8" value="2"> Cauvery<br>
+                <input type="checkbox" name="question8" value="3"> Krishna<br>
+                <input type="checkbox" name="question8" value="4"> Tapti<br>
+                <input type="checkbox" name="question8" value="5"> Narmada<br>
+            </div>
+
+            <div class="question">
+                <label>9. The country that has the highest in Barley Production?</label><br>
+                <input type="checkbox" name="question9" value="1"> China<br>
+                <input type="checkbox" name="question9" value="2"> India<br>
+                <input type="checkbox" name="question9" value="3"> Russia<br>
+                <input type="checkbox" name="question9" value="4"> France<br>
+                <input type="checkbox" name="question9" value="5"> Nepal<br>
+            </div>
+
+            <div class="question">
+                <label>10. Tsunamis are not caused by?</label><br>
+                <input type="checkbox" name="question10" value="1"> Hurricanes<br>
+                <input type="checkbox" name="question10" value="2"> Earthquakes<br>
+                <input type="checkbox" name="question10" value="3"> Undersea Landslides<br>
+                <input type="checkbox" name="question10" value="4"> Volcanic eruptions<br>
+                <input type="checkbox" name="question10" value="5"> Tsunamis<br>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
